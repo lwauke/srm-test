@@ -1,10 +1,15 @@
 <aside class="navbar">
   <div class="search-container bg-white">
-
+    <input type="text" placeholder="Pesquise aqui">
   </div>
   <nav>
     <ul class="menu">
-      <li></li>
+      <app-navbar-item
+        *ngFor="let item of listItems"
+        [icon]="item.icon"
+        [text]="item.text"
+      >      
+      </app-navbar-item>
     </ul>
   </nav>
 </aside>
