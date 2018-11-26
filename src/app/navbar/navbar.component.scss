@@ -30,7 +30,12 @@
     top: 15px;    
 }
 
-.burger-menu { left: 15px; }
+.burger-menu {
+    left: 15px;
+    @media (min-width: 998px) {
+        display: none;
+    }
+}
 
 .close { 
     right: 15px;
