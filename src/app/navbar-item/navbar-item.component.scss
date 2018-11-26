@@ -5,3 +5,8 @@ li {
     font-weight: 600;
     border-bottom: 1px solid #3577a8;
 }
+
+.fa::before {
+    font-size: 40px;
+    margin-right: 10px;
+}

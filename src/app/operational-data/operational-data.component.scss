@@ -28,3 +28,10 @@
     background: #fff;
     z-index: 1;
 }
+
+.fa-arrow-down {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%)
+}
