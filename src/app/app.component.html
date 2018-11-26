@@ -1,36 +1,71 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <header class="header flex bg-white">
-    <h1 class="header__title">
-      <img src="../assets/images/logo-srm.png" alt="logo da SRM - Capital em Movimento" />
+  <app-navbar></app-navbar>
+  <header class="header flex bg-white justify-between align-center">
+    <h1 class="logo">
+      <img class="logo__img" src="../assets/images/logo-srm.png" alt="logo da SRM - Capital em Movimento" />
     </h1>
     <div class="flex">
-      <div class="header__grouped-view">
-        <span class="header__grouped-view__economic-group">Grupo Econômico:</span>
-        <div name="" class="header__grouped-view__select inline-block">
+      <div class="grouped-view pointer">
+        <span class="grouped-view__economic-group">Grupo Econômico:</span>
+        <div class="grouped-view__select inline-block">
           <div>Visão agregada 1</div>
         </div>
       </div>
-      <div class="header__user">
-        <span class="header__user__icon-user">icon</span>
-        <div class="header__user__user-data inline-block">Sandra Oliveira</div>
-        <div class="header__user__notification inline-block flex-center">icon</div>
+      <div class="user pointer">
+        <span class="user__icon-user">icon</span>
+        <div class="user__user-data inline-block">Sandra Oliveira</div>
+        <div class="user__notification inline-block">icon</div>
       </div>
     </div>
   </header>
-  <main class="main">
-    <div class="main__breadcrumb">
-      <span class="main__breadcrumb__route">Página inicial</span>
-      <span class="main__breadcrumb__separator">></span>
-      <span class="main__breadcrumb__route">Painel de gestão</span>
+  <main class="main flex flex-wrap justify-between">
+    <div class="breadcrumb">
+      <a href="#" class="breadcrumb__route">Página inicial</a>
+      <span class="breadcrumb__separator">></span>
+      <a href="#" class="breadcrumb__route">Painel de gestão</a>
     </div>
-    <h2 class="main__subtitle inline-block">Painel de Gestão</h2>
-    <div class="main__product-filter inline-block flex">
-      Produtos:
-      <div class="main__product-filter__select">
-        Todos
+    <h2 class="main__subtitle">Painel de Gestão</h2>
+    <div class="product-filter">
+      <span class="inline-block">Produtos:</span>
+      <div class="product-filter__select pull-right pointer">Todos</div>
+    </div>
+    <div class="box-container flex">
+        <div class="box bg-white">
+          <div class="box-title-container">
+            <h3 class="box-title">Atalhos</h3>
+          </div>
+          <div class="box-content flex">
+            <div class="box-content--operational">
+              <h4 class="box-subtitle">Operacional</h4>
+              <ul class="list">
+                <li class="list__item">Envio</li>
+                <li class="list__item">Assinatura</li>
+                <li class="list__item">Envio de duplicatas</li>
+                <li class="list__item">Assinatura Digital</li>
+                <li class="list__item">Nova Operação</li>
+              </ul>
+            </div>
+            <div class="box-content--general">
+              <h4 class="box-subtitle">Geral</h4>
+              <ul class="list">
+                <li class="list__item">Carteira</li>
+                <li class="list__item">Instruções</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box alerts bg-white">
+            <div class="box-title-container flex align-center justify-between">
+              <h3 class="box-title">Alertas</h3>
+              <span>Últimos 5 dias</span>
+            </div>
+            <div class="box-content">
+
+            </div>
+        </div>
       </div>
-    </div>
   </main>
+  
 </div>
 

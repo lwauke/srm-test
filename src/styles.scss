@@ -1,12 +1,33 @@
 body {
     margin: 0;
     background: #ebebeb;
+    font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
-* { font-family: 'Montserrat', 'Arial', sans-serif; }
-
 .flex { display: flex; }
+
+.justify-between { justify-content: space-between; }
+
+.justify-center { justify-content: center; }
+
+.align-center { align-items: center; }
+
+.flex-wrap { flex-wrap: wrap}
 
 .inline-block { display: inline-block;}
 
 .bg-white { background: #fff; }
+
+.pointer { cursor: pointer; }
+
+.pull-right { float: right; }
+
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}
