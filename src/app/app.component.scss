@@ -223,6 +223,14 @@ $navbar-width: 270px;
         text-align: center;
         margin-bottom: 13px;
         min-width: 95px;
+        cursor: pointer;
+        transition: all 0.205s ease-in-out;
+        &:hover {
+            background: $light-blue;
+            color: #fff;
+            transform: scale(1.005)
+        }
+
     }
 }
 
