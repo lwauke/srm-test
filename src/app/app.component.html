@@ -61,7 +61,14 @@
               <span>Últimos 5 dias</span>
             </div>
             <div class="box-content">
-
+              <div class="canceled-note">
+                23 Notas Canceladas
+              </div>
+              <app-operational-data
+                *ngFor="let data of operationalData"
+                [quantity]="data.quantity"
+                [type]="data.type"                
+              ></app-operational-data>
             </div>
         </div>
       </div>

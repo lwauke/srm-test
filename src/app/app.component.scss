@@ -1,35 +1,33 @@
 $dark-blue: #00233d;
 $light-blue: #589fd4;
 $grey: #a6a6a6;
+$padding-containers-header: 25px 15px;
 
-.header {
-    $padding-containers: 25px 15px;
-    .grouped-view {        
-        &__economic-group { margin-right: 25px; }
-        &__select {
-            background: transparent;
-            border: 1px solid $light-blue;
-            padding: $padding-containers;
-            margin-right: 20px;            
-        }
+.grouped-view {        
+    &__economic-group { margin-right: 25px; }
+    &__select {
+        background: transparent;
+        border: 1px solid $light-blue;
+        padding: $padding-containers-header;
+        margin-right: 20px;            
     }
-    
-    .user {
-        $notification-height: 80px;
-        background: $dark-blue;
-        color: #fff;
-        padding: $padding-containers;
-        padding-right: calc(#{$notification-height} + 15px);
-        margin-right: 30px;
-        position: relative;
-        &__notification {
-            background: $light-blue;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: $notification-height;
-        }
+}
+
+.user {
+    $notification-height: 80px;
+    background: $dark-blue;
+    color: #fff;
+    padding: $padding-containers-header;
+    padding-right: $notification-height + 15px;
+    margin-right: 30px;
+    position: relative;
+    &__notification {
+        background: $light-blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: $notification-height;
     }
 }
 
@@ -138,11 +136,17 @@ $grey: #a6a6a6;
         width: 33.33%;
         .list__item { width: 100%; }
         border-left: 1px solid $grey;
-            
     }
-
     &--operational, &--general {
         padding-right: $gutter;
         padding-left: $gutter;
     }
 }
+
+.alerts {
+    .box-content {
+        padding: 30px 7% 0;
+    }
+}
+
+.canceled-note { margin-bottom: 30px; }

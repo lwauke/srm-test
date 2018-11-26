@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarItemComponent } from './navbar-item/navbar-item.component';
+import { OperationalDataComponent } from './operational-data/operational-data.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    NavbarItemComponent
+    NavbarItemComponent,
+    OperationalDataComponent
   ],
   imports: [
     BrowserModule

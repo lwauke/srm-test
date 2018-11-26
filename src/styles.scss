@@ -4,6 +4,16 @@ body {
     font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}
+
 .flex { display: flex; }
 
 .justify-between { justify-content: space-between; }
@@ -22,12 +32,6 @@ body {
 
 .pull-right { float: right; }
 
-ul { 
-    list-style-type: none;
-    padding-left: 0;
-}
+.hidden { display: none; }
 
-a {
-    text-decoration: none;
-    &:hover { text-decoration: underline; }
-}
+.show { display: flex; }

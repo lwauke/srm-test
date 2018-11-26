@@ -1,0 +1,17 @@
+.container {
+    padding: 12px 0;
+}
+
+.actions {
+    padding: 10px 75px 10px 60px;
+    border: 1px solid #589fd4;
+    cursor: pointer;
+    position: relative;
+    &:hover .action-container{ display: block; }
+}
+
+.action-container {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+}
