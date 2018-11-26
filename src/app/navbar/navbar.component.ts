@@ -12,6 +12,8 @@ export class NavbarComponent implements OnInit {
     {text: 'Ant. de Recebíveis', icon: 'icon'},
   ]
 
+  responsiveMenuShowing: false;
+
   ngOnInit() {
   }
 

@@ -1,11 +1,40 @@
 .navbar {
-    float: left;
-    height: 100%;
-    min-height: 100vh;
-    width: 15%;
-    max-width: 270px;
-    min-width: 200px;
+    position: fixed;
+    height: 100vh;
     background: #00233d;
+    width: 270px;
+    @media (max-width: 998px) {
+        display: none;
+        min-width: 200px;
+        width: 15%;
+        z-index: 1;
+        &::after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            z-index: -1;
+            background: rgba(0, 0, 0, .4);
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+}
+
+.hidden { display: none; }
+
+.navbar.show, .show { display: block; }
+
+.burger-menu, .close {
+    position: absolute;
+    top: 15px;    
+}
+
+.burger-menu { left: 15px; }
+
+.close { 
+    right: 15px;
+    z-index: 2;
 }
 
 input {

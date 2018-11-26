@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from "@angular/common"
 
 
 import { AppComponent } from './app.component';
@@ -16,7 +17,8 @@ import { OperationalDataComponent } from './operational-data/operational-data.co
     OperationalDataComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

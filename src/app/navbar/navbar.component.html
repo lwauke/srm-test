@@ -1,4 +1,15 @@
-<aside class="navbar">
+<span
+  class="burger-menu"
+  (click)="responsiveMenuShowing = !responsiveMenuShowing"
+  [ngClass]="{'hidden': responsiveMenuShowing}">
+  menu
+</span>
+<span
+  class="close hidden"
+  (click)="responsiveMenuShowing = !responsiveMenuShowing"
+  [ngClass]="{'show': responsiveMenuShowing}">close
+</span>
+<aside class="navbar" [ngClass]="{'show': responsiveMenuShowing}">
   <div class="search-container bg-white">
     <input type="text" placeholder="Pesquise aqui">
   </div>
