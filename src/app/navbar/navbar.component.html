@@ -1,16 +1,19 @@
-<i
-  class="burger-menu fa fa-bars"
+<img 
+  src="../../assets/images/menu.png" alt="Burger icon"
+  class="burger-menu"
   (click)="responsiveMenuShowing = !responsiveMenuShowing"
-  [ngClass]="{'hidden': responsiveMenuShowing}">  
-</i>
-<i
+  [ngClass]="{'hidden': responsiveMenuShowing}"
+/>
+<img
+  src="../../assets/images/cancel.png" alt="close icon"
   class="close hidden fa fa-times"
   (click)="responsiveMenuShowing = !responsiveMenuShowing"
-  [ngClass]="{'show': responsiveMenuShowing}">
-</i>
+  [ngClass]="{'show': responsiveMenuShowing}"
+/>
 <aside class="navbar" [ngClass]="{'show': responsiveMenuShowing}">
   <div class="search-container bg-white">
     <input type="text" placeholder="Pesquise aqui">
+    <img class="search-icon" src="../../assets/images/search.png" alt="">
   </div>
   <nav>
     <ul class="menu">

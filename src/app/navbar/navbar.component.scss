@@ -8,7 +8,7 @@
         min-width: 200px;
         width: 15%;
         z-index: 1;
-        &::after {
+        &::before {
             content: '';
             display: block;
             position: fixed;
@@ -25,12 +25,10 @@
 
 .navbar.show, .show { display: block; }
 
-.burger-menu, .close {
-    position: absolute;
-    top: 15px;
-}
+.burger-menu, .close { top: 15px; }
 
 .burger-menu {
+    position: absolute;
     left: 15px;
     @media (min-width: 998px) {
         display: none;
@@ -41,18 +39,28 @@
     right: 15px;
     z-index: 2;
     color: #fff;
+    position: fixed;
 }
 
 input {
-    width: 70%;
+    width: 50%;
     margin-left: 15%;
-    margin-top: 38px;
+    margin-top: 30px;
     border: none;
+    padding: 10px;
 }
-
+ 
 .search-container {
     height: 95px;
     border-right: 1px solid #c1c1c1;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu {

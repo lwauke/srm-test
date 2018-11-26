@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   listItems = [
-    {text: 'Painel de Gestão', icon: 'globe'},
-    {text: 'Conta Digital', icon: 'at'},
-    {text: 'Ant. de Recebíveis', icon: 'chart-bar'},
+    {text: 'Painel de Gestão', icon: 'internet'},
+    {text: 'Conta Digital', icon: 'email'},
+    {text: 'Ant. de Recebíveis', icon: 'bar-chart'},
   ]
 
   responsiveMenuShowing: Boolean = false;
