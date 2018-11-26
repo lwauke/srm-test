@@ -1,4 +1,6 @@
-export const data = [
+import { OperationalData } from './operational-data';
+
+export const data: OperationalData[] = [
     {
         type: 'Notas canceladas',
         quantity: 13

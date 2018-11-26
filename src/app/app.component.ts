@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { data } from './mock-operational-data';
+import { OperationalData } from './operational-data'
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,5 @@ import { data } from './mock-operational-data';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  operationalData = data
+  operationalData:OperationalData[] = data
 }
