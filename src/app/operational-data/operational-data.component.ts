@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-operational-data',
@@ -9,7 +9,15 @@ export class OperationalDataComponent implements OnInit {
   @Input() type: string;
   @Input() quantity: number;
 
-  constructor() { }
+  @Output() quantityChange = new EventEmitter();
+
+  increment() {
+    this.quantity++
+  }
+
+  decrement() {
+    this.quantity--
+  }
 
   ngOnInit() {
   }

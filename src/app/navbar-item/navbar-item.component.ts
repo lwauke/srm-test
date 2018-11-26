@@ -9,8 +9,6 @@ export class NavbarItemComponent implements OnInit {
   @Input() icon: string;
   @Input() text: string;
 
-  constructor() { }
-
   ngOnInit() {
   }
 

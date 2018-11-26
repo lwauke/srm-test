@@ -11,8 +11,6 @@ export class NavbarComponent implements OnInit {
     {text: 'Conta Digital', icon: 'icon'},
     {text: 'Ant. de Recebíveis', icon: 'icon'},
   ]
-  
-  constructor() { }
 
   ngOnInit() {
   }
